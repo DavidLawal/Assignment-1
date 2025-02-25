@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Information</title>  
+    <link rel="stylesheet" href="newStaffPage.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Staff Directory</h1>
+        
+        <div class="controls">
+            <button id="nameBtn" class="sort-btn">Sort by Name</button>
+            <button id="salaryBtn" class="sort-btn">Sort by Salary</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search...">
+            </div>
+        </div>
+        
+        <table id="staffTable">
+            <thead>
+                <tr>
+                    <th data-sort="name">
+                        <div class="header-cell">
+                            Name
+                            <span class="arrow">▼</span>
+                        </div>
+                    </th>
+                    <th data-sort="position">Position</th>
+                    <th data-sort="location">Location</th>
+                    <th data-sort="id">ID</th>
+                    <th data-sort="startDate">Start Date</th>
+                    <th data-sort="salary">
+                        <div class="header-cell">
+                            Salary
+                            <span class="arrow hidden">▼</span>
+                        </div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="staffBody">
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p id='date'></p>
+        <p>&copy; 2025 David kola-lawal. All rights reserved.</p>
+    </footer>
+    <script src="newStaffPage.js"></script>
+</body>
+</html>

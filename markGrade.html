@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="makeGrade.css">
+</head>
+<body>
+    <div class="main-page">
+        <h1>Grade Converter</h1>
+
+        <div class="input">
+            <label for="input-box">Enter Student Mark (0-100)</label>
+            <input type="text" id="input-box" placeholder="Enter mark here">
+        </div>
+
+        <button onclick="convertMarkToGrade()">Convert to Grade</button>
+
+        <div id="validationMessage"></div>
+        <div id="gradeResult"></div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p id='date'></p>
+        <p>&copy; 2025 David kola-lawal. All rights reserved.</p>
+    </footer>
+</body>
+</html>

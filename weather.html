@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Temperature Converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="weather.css">
+ </head>
+<body>
+    <div class="container">
+        <h1>Weather Temperature Converter</h1>
+        
+        <div class="input-group">
+            <label for="temperature">Enter Temperature (Fahrenheit)</label>
+            <input type="number" id="temperature" placeholder="Enter temperature in °F">
+            <div class="error" id="error-message">Please enter a valid temperature</div>
+        </div>
+        
+        <div class="button-group">
+            <button id="convert-btn">Convert</button>
+            <button id="reset-btn">Reset</button>
+        </div>
+        
+        <div class="results">
+            <div class="result-item">
+                <div class="result-label">Fahrenheit</div>
+                <div class="result-value" id="fahrenheit-value">-- <span class="unit">°F</span></div>
+            </div>
+            <div class="result-item">
+                <div class="result-label">Celsius</div>
+                <div class="result-value" id="celsius-value">-- <span class="unit">°C</span></div>
+            </div>
+            <div class="result-item">
+                <div class="result-label">Kelvin</div>
+                <div class="result-value" id="kelvin-value">-- <span class="unit">K</span></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p id='date'></p>
+        <p>&copy; 2025 David kola-lawal. All rights reserved.</p>
+    </footer>
+    <script src="weather.js"></script>
+</body>
+</html>
